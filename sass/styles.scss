@@ -32,6 +32,7 @@ h1, h3{
   position: relative;
   z-index: 1;
 }
+/* Header */
 .header__logo img{
     max-height: 120px;
 }
@@ -57,7 +58,7 @@ h1, h3{
     color: #E8ffff;
     text-decoration: none;
 }
-
+/* Main */
 .main {
     padding: 1rem;
     display: flex;
@@ -69,7 +70,7 @@ h1, h3{
     text-align: center;
     margin: 2rem 0;
 }
-
+/* Filters */
 .filters {
     display: flex;
     flex-direction: column;
@@ -262,6 +263,7 @@ h1, h3{
   background: #fd55b7;
   box-shadow: 0 6px 14px #83feff;
 }
+
 /* ----- Footer ----- */
 .footer {
   background: #2E2a39; 
@@ -294,7 +296,7 @@ h1, h3{
 .footer__link:hover {
   color: #fd55b7;
 }
-
+/* Equalizer */
 .equalizer-container {
   padding-top: 150px;
 
