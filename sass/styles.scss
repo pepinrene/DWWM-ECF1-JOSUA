@@ -263,6 +263,8 @@ h1, h2, h3 {
   background: #fd55b7;
   box-shadow: 0 6px 14px #83feff;
 }
+
+
 /* ----- Footer ----- */
 .footer {
   background: #2E2a39; 
@@ -294,6 +296,45 @@ h1, h2, h3 {
 
 .footer__link:hover {
   color: #fd55b7;
+}
+/* ----- Animation égaliseur ----- */
+.equalizer{display:flex;align-items:center;justify-content:center;gap:6px;padding:1rem 0;margin:1rem auto 2rem;width:100%}
+.equalizer__col{width:10px;height:120px;display:flex;flex-direction:column;justify-content:space-between;align-items:center}
+.equalizer__bar{width:100%;height:48%;border-radius:3px;animation:eq-bounce 1.2s ease-in-out infinite;transform:scaleY(.35)}
+.equalizer__bar--top{background:#84feff;transform-origin:bottom}
+.equalizer__bar--bottom{background:#fd55b7;transform-origin:top}
+@keyframes eq-bounce{0%,100%{transform:scaleY(.35)}25%{transform:scaleY(.9)}50%{transform:scaleY(1.15)}75%{transform:scaleY(.6)}}
+
+/* l’effet “onde” sur 25 colonnes */
+.equalizer__col:nth-child(1) .equalizer__bar{animation-delay:0s}
+.equalizer__col:nth-child(2) .equalizer__bar{animation-delay:.12s}
+.equalizer__col:nth-child(3) .equalizer__bar{animation-delay:.24s}
+.equalizer__col:nth-child(4) .equalizer__bar{animation-delay:.36s}
+.equalizer__col:nth-child(5) .equalizer__bar{animation-delay:.48s}
+.equalizer__col:nth-child(6) .equalizer__bar{animation-delay:0s}
+.equalizer__col:nth-child(7) .equalizer__bar{animation-delay:.12s}
+.equalizer__col:nth-child(8) .equalizer__bar{animation-delay:.24s}
+.equalizer__col:nth-child(9) .equalizer__bar{animation-delay:.36s}
+.equalizer__col:nth-child(10) .equalizer__bar{animation-delay:.48s}
+.equalizer__col:nth-child(11) .equalizer__bar{animation-delay:0s}
+.equalizer__col:nth-child(12) .equalizer__bar{animation-delay:.12s}
+.equalizer__col:nth-child(13) .equalizer__bar{animation-delay:.24s}
+.equalizer__col:nth-child(14) .equalizer__bar{animation-delay:.36s}
+.equalizer__col:nth-child(15) .equalizer__bar{animation-delay:.48s}
+.equalizer__col:nth-child(16) .equalizer__bar{animation-delay:0s}
+.equalizer__col:nth-child(17) .equalizer__bar{animation-delay:.12s}
+.equalizer__col:nth-child(18) .equalizer__bar{animation-delay:.24s}
+.equalizer__col:nth-child(19) .equalizer__bar{animation-delay:.36s}
+.equalizer__col:nth-child(20) .equalizer__bar{animation-delay:.48s}
+.equalizer__col:nth-child(21) .equalizer__bar{animation-delay:0s}
+.equalizer__col:nth-child(22) .equalizer__bar{animation-delay:.12s}
+.equalizer__col:nth-child(23) .equalizer__bar{animation-delay:.24s}
+.equalizer__col:nth-child(24) .equalizer__bar{animation-delay:.36s}
+.equalizer__col:nth-child(25) .equalizer__bar{animation-delay:.48s}
+
+/* désactive l’animation si l’utilisateur préfère moins de mouvement */
+@media (prefers-reduced-motion: reduce){
+  .equalizer__bar{animation:none;transform:scaleY(.35)!important}
 }
 
 @media (max-width: 768px) {
