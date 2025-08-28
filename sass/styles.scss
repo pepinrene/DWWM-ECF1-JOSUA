@@ -1,0 +1,307 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2e2a39 20%, #fd55b7 40%, #84feff 60%, #E8ffff 100%);
+
+}
+h1, h2, h3 {
+    margin: 1rem 0;
+    text-align: center;
+}
+.hero-background {
+  position: relative;
+  overflow: hidden;
+  color: #E8ffff;
+  padding-bottom: 2rem;
+}
+
+/* Image placée en fond */
+.hero-background .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.5) blur(2px); /* fonce et floute l’image */
+}
+
+/* Contenu par-dessus l'image */
+.hero-background > * {
+  position: relative;
+  z-index: 1;
+}
+.header__logo img{
+    max-height: 120px;
+}
+.header {
+    background: #2E2a39;
+    color: #E8ffff;
+    padding: 1rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header__menu a {
+    color: #E8ffff;
+    text-decoration: none;
+}
+
+.main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filters input {
+    padding: 0.5rem;
+    width: 250px;
+    max-width: 90%;
+    border: 1px solid #E8ffff;
+    border-radius: 5px;
+}
+
+.filters__buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.filters__buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #83feff;
+    color: #2E2a39;
+    cursor: pointer;
+}
+.filters {
+  display: flex;
+  justify-content: center; /* centre les boutons */
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;  /* même largeur max que tes cards */
+  flex-wrap: wrap;    /* passe à la ligne sur petit écran */
+}
+
+.filters__btn {
+  background: #2E2a39;
+  color: #E8ffff;
+  border: 2px solid #fd55b7;
+  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+.filters__btn:hover,
+.filters__btn.active {
+  background: #ff4ecb;
+  color: #1a0033;
+}
+
+.filters__btn.active {
+  background: #fd55b7;
+  color: #2E2a39;
+}
+
+.films-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.films {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.film-card {
+   
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 220px;
+    width: 100%;
+    box-shadow: 0 4px 10px #2E2a39;
+}
+
+.film-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem;
+    border-radius: 6px;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: #E8ffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav__link:hover {
+  color: #fd55b7;
+}
+
+.hover {
+  filter: brightness(0.9);
+}
+/* ----- Section CinéPass ----- */
+.cinepass {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;   /* largeur max du conteneur */
+  margin: 0 auto;      /* centre le conteneur dans la page */
+}
+
+.cinepass__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+/* ----- Cards ----- */
+.card {
+  background: #2E2a39;
+  border-radius: 20px;
+  padding: 1.25rem;
+  margin: 1.25rem auto;
+  max-width: 420px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px #2E2a39;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+  color: #fd55b7;
+  text-transform: uppercase;
+}
+
+.card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 1rem;
+}
+
+.card__item {
+  margin: 0.4rem 0;
+}
+
+.card__price {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 0.6rem 0 1rem;
+}
+
+.card__btn {
+  background: #fd55b7;
+  color: #E8ffff;
+  border: 0;
+  border-radius: 20px;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 14px #2E2a39;
+}
+
+.card__btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.card__btn--highlight {
+  background: #fd55b7;
+  box-shadow: 0 6px 14px #83feff;
+}
+/* ----- Footer ----- */
+.footer {
+  background: #2E2a39; 
+  padding: 1rem 2rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo / nav centré / vide ou autre */
+  align-items: center;
+}
+
+.footer__logo img {
+  height: 70px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #E8ffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: #fd55b7;
+}
+
+@media (max-width: 768px) {
+    .header__menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .filters__buttons {
+        justify-content: center;
+    }
+}

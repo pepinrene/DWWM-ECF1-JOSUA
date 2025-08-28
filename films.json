@@ -1,0 +1,47 @@
+[
+  {
+    "movie": "GHOST IN THE SHELL",
+    "price": 10,
+    "date": "2025-06-15",
+    "time": "19:00",
+    "ticketsSold": 12,
+    "description": "Dans un futur cybernétique, une policière cyborg enquête sur un mystérieux hacker appelé le Marionnettiste.",
+    "duration": 83
+  },
+  {
+    "movie": "AKIRA",
+    "price": 12,
+    "date": "2025-06-15",
+    "time": "21:30",
+    "ticketsSold": 80,
+    "description": "À Neo-Tokyo, deux amis se retrouvent au cœur d'une conspiration militaire quand l’un d’eux développe des pouvoirs psychiques dévastateurs.",
+    "duration": 124
+  },
+  {
+    "movie": "BLADE RUNNER",
+    "price": 10,
+    "date": "2025-06-16",
+    "time": "19:00",
+    "ticketsSold": 80,
+    "description": "Dans un futur dystopique, un policier est chargé de traquer et éliminer des androïdes rebelles appelés réplicants.",
+    "duration": 117
+  },
+  {
+    "movie": "BLADE RUNNER 2049",
+    "price": 12,
+    "date": "2025-06-16",
+    "time": "22:00",
+    "ticketsSold": 23,
+    "description": "Des décennies après les événements du premier film, un nouveau blade runner découvre un secret qui pourrait bouleverser l’humanité.",
+    "duration": 163
+  },
+  {
+    "movie": "ALTERED  CARBON",
+    "price": 18,
+    "date": "2025-06-17",
+    "time": "20:30",
+    "ticketsSold": 30,
+    "description": "Dans un monde où la conscience peut être transférée d’un corps à l’autre, un ancien soldat enquête sur un meurtre complexe.",
+    "duration": 120
+  }
+]

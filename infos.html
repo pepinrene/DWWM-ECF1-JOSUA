@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinéma - Films</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+
+
+<header class="header" role="banner">
+    <nav class="header__nav" aria-label="Navigation principale">
+        <a class="header__logo" href="films.html"><img src="img/logo.png" alt="logo"></a>
+        
+        <ul class="header__menu">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="infos.html">Infos</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="hero-background"> 
+    <img src="img/affiche.png" alt="Image de fond cinéma" class="background-image">
+
+  <h2 class="cinepass__title">CinéPass</h2>
+  <main class="filters">
+  <button class="filters__btn" data-filter="all">Tous</button>
+  <button class="filters__btn" data-filter="basic">CinéPass -18</button>
+  <button class="filters__btn" data-filter="plus">CinéPass +18</button>
+  <button class="filters__btn" data-filter="gold">CinéPass Gold</button>
+</main>
+   
+  <section class="cinepass">
+    <!-- Carte 1 -->
+    <article class="card" data-category="basic">
+      <h3 class="card__title">CINÉPASS -18</h3>
+      <ul class="card__list">
+        <li class="card__item">Accès à volonté aux séances standard</li>
+        <li class="card__item">Réservation 24 séances</li>
+        <li class="card__item">Sans engagement</li>
+      </ul>
+      <p class="card__price">18,40€</p>
+      <button class="card__btn">Choisir ce CinéPass</button>
+    </article>
+
+    <!-- Carte 2 -->
+    <article class="card" data-category="plus">
+      <h3 class="card__title">CINÉPASS +18</h3>
+      <ul class="card__list">
+        <li class="card__item">Accès à volonté aux séances standard</li>
+        <li class="card__item">Accès aux salles premium</li>
+        <li class="card__item">Réservation 24 séances</li>
+        <li class="card__item">Sans engagement</li>
+      </ul>
+      <p class="card__price">18,40€</p>
+      <button class="card__btn">Choisir ce CinéPass</button>
+    </article>
+
+    <!-- Carte 3 -->
+    <article class="card" data-category="gold">
+      <h3 class="card__title">CINÉPASS Gold</h3>
+      <ul class="card__list">
+        <li class="card__item">Accès à volonté aux séances standard</li>
+        <li class="card__item">Accès aux séances premium</li>
+        <li class="card__item">Accès aux avant-premières</li>
+        <li class="card__item">Réservation 24 séances</li>
+        <li class="card__item">Sans engagement</li>
+      </ul>
+      <p class="card__price">18,40€</p>
+      <button class="card__btn">Choisir ce CinéPass</button>
+    </article>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__logo">
+      <a href="films.html">
+      <img src="img/logo.png" href="films.html" alt="Logo Cinéma"/></a>
+    </div>
+    <nav class="footer__nav">
+      <a href="services.html" class="footer__link">Services</a>
+      <a href="infos.html" class="footer__link">Infos</a>
+    </nav>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
