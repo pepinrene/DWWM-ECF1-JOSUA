@@ -1,82 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinéma - Films</title>
-    <link rel="stylesheet" href="css/styles.min.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CINEMA NEON DYNASTY</title>
+<link href="css/styles.min.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="hero-background"> 
-    <img src="img/affiche.png" alt="Image de fond cinéma" class="background-image">
-
+<div class="hero-background">
+<img alt="Image de fond cinéma" class="background-image" src="img/affiche.png"/>
 <header class="header" role="banner">
-    <nav class="header__nav" aria-label="Navigation principale">
-        <a class="header__logo" href="films.html"><img src="img/logo.png" alt="logo"></a>
-        
-        <ul class="header__menu">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="infos.html">Infos</a></li>
-        </ul>
-    </nav>
+<nav aria-label="Navigation principale" class="header__nav">
+<a class="header__logo" href="films.html"><img alt="logo" src="img/logo.png"/></a>
+<ul class="header__menu">
+<li><a href="services.html">Services</a></li>
+<li><a href="infos.html">Infos</a></li>
+</ul>
+</nav>
 </header>
+</div>
 <main class="main" role="main">
-    <h1>CINEMA NEON DYNASTY</h1>
-    <section class="filters">
-        <div class="filters__buttons">
-            <button data-filter="all">Tous</button>
-            <button data-filter="action">Popcorn</button>
-            <button data-filter="drame">Boisson</button>    
-        </div>
-    </div>
-    </section>
-    <section class="films-section">
-    <h2>RESTAURANT</h2>
-    <div class="films" id="films">
-        <div class="film-card" data-genre="action">
-            <img src="img/pop-s.webp" alt="popcornS">
-            <h3>3€</h3>
-        </div>
-        <div class="film-card" data-genre="action">
-            <img src="img/pop-M.webp" alt="popcornM">
-            <h3>5€</h3>
-        </div>
-        <div class="film-card" data-genre="action">
-            <img src="img/pop-G.webp" alt="popcornG">
-            <h3>8€</h3>
-        </div>
-    </div>
+<h1>CINEMA NEON DYNASTY</h1>
+<section class="filters" aria-label="Filtres">
+<div class="filters__buttons">
+<button data-filter="all">Tous</button>
+<button data-filter="action">Popcorn</button>
+<button data-filter="drame">Boisson</button>
+</div>
 </section>
+<section class="films-section">
+<h2>RESTAURANT</h2>
+<div class="films" id="films">
+<div class="film-card" data-genre="action">
+<img alt="popcornS" src="img/pop-s.webp"/>
+<h3>3€</h3>
+</div>
+<div class="film-card" data-genre="action">
+<img alt="popcornM" src="img/pop-M.webp"/>
+<h3>5€</h3>
+</div>
+<div class="film-card" data-genre="action">
+<img alt="popcornG" src="img/pop-G.webp"/>
+<h3>8€</h3>
+</div>
+</div></section>
+<section class="films-section">
+<h2>BOISSON</h2>
+<div class="films" id="films-2">
+<div class="film-card" data-genre="drame">
+<img alt="eau" src="img/eau-.webp"/>
+<h3>3€</h3>
+</div>
+<div class="film-card" data-genre="drame">
+<img alt="cola" src="img/cola-.webp"/>
+<h3>5€</h3>
+</div>
+<div class="film-card" data-genre="drame">
+<img alt="champagne" src="img/champagne.webp"/>
+<h3>8€</h3>
+</div>
+</div></section>
+
 </main>
-</section>
-    <section class="films-section">
-    <h2>BOISSON</h2>
-    <div class="films" id="films">
-        <div class="film-card" data-genre="drame">
-            <img src="img/eau-.webp" alt="eau">
-            <h3>3€</h3>
-        </div>
-        <div class="film-card" data-genre="drame">
-            <img src="img/cola-.webp" alt="cola">
-            <h3>5€</h3>
-        </div>
-        <div class="film-card" data-genre="drame">
-            <img src="img/champagne.webp" alt="champagne">
-            <h3>8€</h3>
-        </div>
-    </div>
-</section>
 <footer class="footer">
-  <div class="footer__container">
-    <div class="footer__logo">
-      <a href="films.html">
-      <img src="img/logo.png" href="films.html" alt="Logo Cinéma"/></a>
-    </div>
-    <nav class="footer__nav">
-      <a href="services.html" class="footer__link">Services</a>
-      <a href="infos.html" class="footer__link">Infos</a>
-    </nav>
-  </div>
+<div class="footer__container">
+<div class="footer__logo">
+<a href="films.html">
+<img alt="Logo Cinéma" src="img/logo.png"/></a>
+</div>
+<nav class="footer__nav">
+<a class="footer__link" href="services.html">Services</a>
+<a class="footer__link" href="infos.html">Infos</a>
+</nav>
+</div>
 </footer>
 <script src="app.js"></script>
 </body>

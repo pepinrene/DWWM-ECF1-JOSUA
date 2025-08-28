@@ -1,106 +1,101 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinéma - Films</title>
-    <link rel="stylesheet" href="css/styles.min.css">
-</head>
-<body>
-<div class="hero-background"> 
-    <img src="img/affiche.png" alt="Image de fond cinéma" class="background-image">
-
-<header class="header" role="banner">
-    <nav class="header__nav" aria-label="Navigation principale">
-        <a class="header__logo" href="films.html"> 
-            <img src="img/logo.png" alt="logo"></a>
-        
-        <ul class="header__menu">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="infos.html">Infos</a></li>
-        </ul>
-    </nav>
-</header>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CINEMA NEON DYNASTY</title>
+<link href="css/styles.min.css" rel="stylesheet"/>
+ </head>
+  <body>
+    <div class="hero-background">
+    <img alt="Image de fond cinéma" class="background-image" src="img/affiche.png"/>
+    <header class="header" role="banner">
+    <nav aria-label="Navigation principale" class="header__nav">
+     <a class="header__logo" href="films.html">
+     <img alt="logo" src="img/logo.png"/></a>
+     <ul class="header__menu">
+     <li><a href="services.html">Services</a></li>
+     <li><a href="infos.html">Infos</a></li>
+     </ul>
+   </nav>
+ </header>
+</div>
 <main class="main" role="main">
-    <h1>CINEMA NEON DYNASTY</h1>
-    <section class="filters">
-        <input type="text" id="search" placeholder="Rechercher un film" aria-label="Recherche de film">
-        <div class="filters__buttons">
-            <button data-filter="all">Tous</button>
-            <button data-filter="action">Action</button>
-            <button data-filter="drame">Drame</button>
-            <button data-filter="comédie">Comédie</button>
-        </div>
-    </div>
-    </section>
-    <section class="films-section">
-    <h2>La Fiche du 15 Juin 2025</h2>
-    <div class="films" id="films">
-        <div class="film-card" data-genre="action">
-            <img src="img/ghost.webp" alt="Film Action 1">
-            <h3>GHOST IN THE SHELL</h3>
-        </div>
-        <div class="film-card" data-genre="drame">
-            <img src="img/akira.webp" alt="Film Drame 1">
-            <h3>AKIRA</h3>
-        </div>
-        <div class="film-card" data-genre="comédie">
-            <img src="img/blade-runner.webp" alt="Film Comédie 1">
-            <h3>BLADE RUNNER</h3>
-        </div>
-        <div class="film-card" data-genre="action">
-            <img src="img/bladerunner2046.webp" alt="Film Action 2">
-            <h3>BLADE RUNNER 2049</h3>
-        </div>
-        <div class="film-card" data-genre="drame">
-            <img src="img/alteredcarbon.webp" alt="Film Drame 2">
-            <h3>ALTERED CARBON</h3>
-        </div>
-    </div>
+<h1>CINEMA NEON DYNASTY</h1>
+<section class="filters" aria-label="Filtres">
+<input aria-label="Recherche de film" id="search" placeholder="Rechercher un film" type="text"/>
+<div class="filters__buttons">
+<button data-filter="all">Tous</button>
+<button data-filter="action">Action</button>
+<button data-filter="drame">Drame</button>
+<button data-filter="comédie">Comédie</button>
+</div>
 </section>
+<section class="films-section">
+<h2>La Fiche du 15 Juin 2025</h2>
+<div class="films" id="films">
+<div class="film-card" data-genre="action">
+<img alt="Film Action 1" src="img/ghost.webp"/>
+<h3>GHOST IN THE SHELL</h3>
+</div>
+<div class="film-card" data-genre="drame">
+<img alt="Film Drame 1" src="img/akira.webp"/>
+<h3>AKIRA</h3>
+</div>
+<div class="film-card" data-genre="comédie">
+<img alt="Film Comédie 1" src="img/blade-runner.webp"/>
+<h3>BLADE RUNNER</h3>
+</div>
+<div class="film-card" data-genre="action">
+<img alt="Film Action 2" src="img/bladerunner2046.webp"/>
+<h3>BLADE RUNNER 2049</h3>
+</div>
+<div class="film-card" data-genre="drame">
+<img alt="Film Drame 2" src="img/alteredcarbon.webp"/>
+<h3>ALTERED CARBON</h3>
+</div>
+</div>
 </section>
-    <section class="equalizer" aria-label="Equalizer animé (CSS)">
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
-  <div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<section aria-label="Equalizer animé (CSS)" class="equalizer">
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
+<div class="equalizer__col"><span class="equalizer__bar equalizer__bar--top"></span><span class="equalizer__bar equalizer__bar--bottom"></span></div>
 </section>
-
 </main>
 <footer class="footer">
-  <div class="footer__container">
-    <div class="footer__logo"> 
-        <a href="films.html">   
-      <img src="img/logo.png"  alt="Logo Cinéma"/></a>
-      
-    </div>
-
-    <nav class="footer__nav">
-      <a href="services.html" class="footer__link">Services</a>
-      <a href="infos.html" class="footer__link">Infos</a>
-    </nav>
-  </div>
+<div class="footer__container">
+<div class="footer__logo">
+<a href="films.html">
+<img alt="Logo Cinéma" src="img/logo.png"/></a>
+</div>
+<nav class="footer__nav">
+<a class="footer__link" href="services.html">Services</a>
+<a class="footer__link" href="infos.html">Infos</a>
+</nav>
+</div>
 </footer>
 <script src="app.js"></script>
 </body>
