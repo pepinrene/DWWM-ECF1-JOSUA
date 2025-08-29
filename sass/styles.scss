@@ -1,3 +1,25 @@
+/* === Mixin unique pour composants "chip/pill" === */
+@mixin ui-chip(
+  $py:.4rem,
+  $px:.7rem,
+  $fs:inherit,
+  $radius:9999px,
+  $border:1px solid currentColor,
+  $bg:transparent,
+  $color:inherit,
+  $cursor:null,
+  $filter:false
+){
+  font-size:$fs;
+  padding:$py $px;
+  border-radius:$radius;
+  @if $border != none { border:$border; }
+  background:$bg;
+  color:$color;
+  @if $cursor != null { cursor:$cursor; }
+  @if $filter { backdrop-filter:saturate(120%) blur(2px); }
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -407,3 +429,77 @@ h1, h3{
         justify-content: center;
     }
 }
+
+
+#film-filters-advanced { margin-top: .5rem; }
+
+.filters-adv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+
+  &__group {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+  }
+
+  .btn {
+    padding: .4rem .7rem;
+    border: 1px solid currentColor;
+    border-radius: 9999px;
+    background: transparent;
+    cursor: pointer;
+
+    &.is-active { font-weight: 600; text-decoration: underline; }
+  }
+
+  label { font-size: .9rem; }
+}
+
+.hidden-adv { display: none !important; }
+
+.film-card { position: relative; }
+.movie-badges {
+  position: absolute; top: .5rem; left: .5rem;
+  display: flex; gap: .25rem; flex-wrap: wrap; z-index: 2;
+
+  .badge {
+    font-size: .72rem; padding: .15rem .4rem; border-radius: .4rem;
+    background: rgba(0,0,0,.6); color: #fff; backdrop-filter: saturate(120%) blur(2px);
+
+    &.badge--soldout { background: #8b0000; }
+  }
+}
+
+/* === Scope films only (pour éviter d'impacter les autres pages) === */
+#film-filters-advanced { margin-top: .5rem; }
+
+#film-filters-advanced .filters-adv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+}
+#film-filters-advanced .filters-adv__group {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+#film-filters-advanced .btn{ @include ui-chip(); }
+#film-filters-advanced .btn.is-active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+#film-filters-advanced label { font-size: .9rem; }
+
+/* Masquage et badges uniquement dans la grille films */
+.films-section .hidden-adv { display: none !important; }
+.films-section .film-card { position: relative; }
+.films-section .movie-badges {
+  position: absolute; top: .5rem; left: .5rem;
+  display: flex; gap: .25rem; flex-wrap: wrap; z-index: 2;
+}
+.films-section .movie-badges .badge{ @include ui-chip(.15rem,.4rem,.72rem,.4rem, none, rgba(0,0,0,.6), #fff, null, true); }
+.films-section .movie-badges .badge--soldout { background: #8b0000; }
